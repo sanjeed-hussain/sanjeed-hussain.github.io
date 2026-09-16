@@ -33,24 +33,41 @@
   </style>
 </head>
 <body>
+    <nav>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="mailto:sanjeedhussain0@gmail.com">Contact</a>
+  </nav>
   <main>
     <h1>Hello, welcome to sanjeed-hussain's website!
     </h1>
-  <img src="profile.jpg" alt="Photo of Sanjeed" class="profile-photo">
 
-<style>
-  .profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-</style>
+    <div class="profile-wrap">
+      <img src="profile.jpg" alt="Photo of Sanjeed" class="profile-photo">
+    </div>
+
+    <style>
+      .profile-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #dbeafe;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        display: block;
+      }
+    </style>
     <p>I am learning how to build websites.</p>
-    <h2>About Me</h2>
+    <h2 id="about">About Me</h2>
 <p>I am Sanjeed, a beginner web developer learning HTML and CSS.</p>
 
-    <h2>My hobbies</h2>
+   <h2 id="hobbies">My hobbies</h2>
     <p>Gaming · Music · Learning</p>
     <a href="mailto:sanjeedhussain0@gmail.com">Contact Me</a>
 
